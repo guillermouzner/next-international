@@ -1,7 +1,8 @@
 import {getI18n, getCurrentLocale, getStaticParams} from "../../locales/server";
 
+// esto no me funciona cuando hago npm run build quizas es por {name} de en.ts y es.ts? {name} => dynamic
 // Only needed for SSG
-export const generateStaticParams = getStaticParams();
+// export const generateStaticParams = getStaticParams();
 
 export default async function Home() {
   const t = await getI18n();
